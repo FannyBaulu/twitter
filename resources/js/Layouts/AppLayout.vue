@@ -21,7 +21,7 @@
                                     Tweets
                                 </jet-nav-link>
                                 <jet-nav-link :href="route('tweets.followings')" :active="route().current('tweets.followings')">
-                                    Mes abonnements
+                                    My subscriptions
                                 </jet-nav-link>
                             </div>
                         </div>

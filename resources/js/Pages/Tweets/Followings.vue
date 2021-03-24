@@ -2,7 +2,7 @@
     <app-layout>
         <template #header>
             <h2 class="font-semibold text-sl text-gray-800 leading-tight">
-                Mes abonnements
+                My subscriptions
             </h2>
         </template>
 
@@ -24,8 +24,8 @@
                     </div>
                     <div class="w-40">
                         <inertia-link as="button" method="POST" :href="`/unfollows/${tweet.user.id}`"
-                        class="bg-white text-blue-500 cursor-pointer px-5 py-2 hover:text-white border border-blue-500 leading-tight hover:bg-blue-500 rounded-full font-extrabold transition-all duration-300"
-                        preserve-scroll>Ne plus suivre</inertia-link>
+                            class="bg-white text-blue-500 cursor-pointer px-5 py-2 hover:text-white border border-blue-500 leading-tight hover:bg-blue-500 rounded-full font-extrabold transition-all duration-300"
+                            preserve-scroll>Unfollow</inertia-link>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
         },
 
         props: {
-            followings : null
+            followings: null
         },
     }
 
