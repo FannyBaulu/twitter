@@ -39,14 +39,14 @@
         
         computed: {
             /**
-            * Checking the number of characters left for the user to write.
+            * Checking the number of characters left for the user to write and showing it dynamically.
              */
             remainingChars(){
                 return this.limit - this.content.length;
             },
 
             /**
-            * A commenter
+            * Verify that the tweet correspond to the limit of characters all along the typing entry of the user.
              */
             canSubmit(){
                 return this.content.length && this.remainingChars >= 0

@@ -55,7 +55,7 @@ class TweetController extends Controller
     }
 
     /**
-     * A COMMENTER
+     * List the tweets of the author the user is following
      *
      */
     public function followings(){
@@ -90,7 +90,8 @@ class TweetController extends Controller
     }
 
     /**
-     * A Commenter
+     * List the tweets of the author selected,giving information regarding the author about if he
+     * is followed by or is following the authenticated user.
      *
      * @param User $user
      */
